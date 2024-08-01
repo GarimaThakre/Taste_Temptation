@@ -1,0 +1,441 @@
+/*--------------------------------------------------------------
+# General
+--------------------------------------------------------------*/
+body {
+  font-family: "Poppins", sans-serif;
+  color: #444444;
+  background-color: #fff;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #ffb03b;
+}
+
+a:hover {
+  color: #ffc56e;
+  text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Satisfy", sans-serif;
+}
+
+/*--------------------------------------------------------------
+# Header
+--------------------------------------------------------------*/
+#header {
+  top: 0;
+  width: 100%;
+  height: 70px;
+  z-index: 997;
+  transition: all 0.5s;
+  padding: 10px 0;
+  background: rgba(26, 24, 22, 0.85);
+  
+}
+
+
+.navbar {
+  padding: 0;
+  
+}
+
+.navbar-header> .navbar-brand {
+  font-family: "Satisfy", cursive;
+  font-weight: bolder;
+  font-size: 30px;
+}
+
+.navbar ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  list-style: none;
+  align-items: center;
+}
+
+.navbar li {
+  position: relative;
+  font-size: 20px;
+}
+
+.navbar-nav.navbar-right {
+  margin-right: 0;
+}
+
+.signin-signup-btn {
+  background: #ffb03b;
+  color: #fff;
+  border-radius: 50px;
+  margin-left: 20px;
+  padding: 10px 20px;
+  font-size: 17px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  transition: 0.3s;
+  white-space: nowrap;
+}
+
+.signin-signup-btn:hover {
+  background: #ffa012;
+  color: #fff;
+}
+
+
+/*--------------------------------------------------------------
+# Welcome Section
+--------------------------------------------------------------*/
+#welcome {
+  background: url('https://as1.ftcdn.net/v2/jpg/02/97/67/70/1000_F_297677001_zX7ZzRq8DObUV5IWTHAIhAae6DuiEQh4.jpg') no-repeat center center;
+  background-size: cover;
+  color: white;
+  padding: 200px 0;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+  height: 90vh;
+}
+.container-welcome{
+	justify-content: center;
+}
+.container-welcome h1 {
+  font-size: 70px;
+  margin-bottom: 20px;
+  animation: fadeInDown 2s;
+  font-family: "EB Garamond", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+.container-welcome p {
+	font-family: "Dancing Script", cursive;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-size: 25px;
+  animation: fadeInUp 2s;
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+/*--------------------------------------------------------------
+# Menu Section
+--------------------------------------------------------------*/
+#menu{
+	margin-top: 50px;
+	
+}
+#menu > .container > h2{
+	font-size: 40px;
+	font-weight: 700;
+	font-family: "Satisfy", cursive;
+	margin-bottom: 30px;
+}
+#menu > .container > h2> span{
+	color: #ffa012;
+	
+}
+
+#menu > .container > p{
+	font-family: "EB Garamond", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  margin-bottom: 30px;
+}
+
+.menu-nav{
+	display: flex;
+	justify-content: center;
+	
+}
+.menu-nav> li{
+	margin-right: 15px;
+	list-style: none;
+	font-size: 17px;
+	border: 2px solid #ffa012;
+	border-radius: 20px;
+	padding: 10px;
+	cursor: pointer;
+	
+}
+.menu-nav > li:hover{
+	background-color: #ffa012;
+	color: white;
+}
+.menu-btn:hover{
+	text-decoration: none;
+}
+
+
+/*--------------------------------------------------------------
+# Gallery Section
+--------------------------------------------------------------*/
+#gallery {
+  padding: 100px 0;
+}
+
+#gallery h2 {
+  font-size: 40px;
+	font-weight: 700;
+	font-family: "Satisfy", cursive;
+	margin-bottom: 20px;
+  animation: fadeIn 2s;
+}
+
+#gallery p {
+  font-family: "EB Garamond", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-size: 500;
+  font-size: 17px;
+  margin-bottom: 50px;
+  animation: fadeIn 2s;
+}
+
+#gallery .img-responsive {
+  margin: 10px 0;
+  animation: fadeIn 2s;
+  border-radius: 15px;
+}
+
+#gallery .img-responsive:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s;
+}
+
+/*--------------------------------------------------------------
+# Contact Section
+--------------------------------------------------------------*/
+#contact {
+  background: rgba(39, 37, 34, 0.8);
+  color: white;
+  padding: 100px 0;
+}
+
+#contact h2 {
+  font-size: 40px;
+  margin-bottom: 30px;
+  animation: fadeIn 2s;
+}
+
+#contact p {
+  font-size: 18px;
+  margin-bottom: 50px;
+  animation: fadeIn 2s;
+}
+
+#contact .form-control {
+  background: rgba(0, 0, 0, 0.6);
+  border: none;
+  color: #fff;
+}
+
+#contact .form-control:focus {
+  background: rgba(0, 0, 0, 0.8);
+  color: #fff;
+}
+
+#contact .btn-primary {
+  background: #ffb03b;
+  border: none;
+}
+
+#contact .btn-primary:hover {
+  background: #ffa012;
+  color: #fff;
+  border: none;
+}
+/*--------------------------
+		Foooter Section
+-----------------------------------*/
+#footer{
+    display: table;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+.container-footer >h3{
+	font-size: 40px;
+	font-weight: 700;
+	font-family: "Satisfy", cursive;
+	margin-bottom: 10px;
+}
+.container-footer >h3>span{
+	color: #ffa012;
+}
+.container-footer > p,.copyright{
+	font-family: "EB Garamond", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  margin-bottom: 10px;
+}
+.fab{
+	font-size: 30px;
+	margin: 10px;
+}
+.credits{
+	font-family: "EB Garamond", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  margin-bottom: 10px;
+}
+.credits a{
+	color: #ffa012;
+}
+
+/*--------------------------
+		Food  Section
+-----------------------------------*/
+.food-container{
+	margin: 30px;
+	border: 1px solid;
+	padding: 10px;
+	box-shadow: 5px 10px 18px #888888;
+	margin-bottom: 100px;
+}
+
+.food-table{
+	width: 100%;
+	border: none;
+	border-style: none;
+}
+#img-food{
+	width: 300px;
+	height: 200px;
+	margin-left: 13%;
+	border-color: black;
+	border-radius: 10px;
+}
+#food-title{
+	font-family: "EB Garamond", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 25px;
+}
+#food-para{
+	font-family: "EB Garamond", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+}
+#food-price{
+	font-family: "EB Garamond", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+}
+
+.spice-level {
+    font-family: Arial, sans-serif;  /* Font style */
+    font-size: 16px;  /* Font size */
+    padding: 10px;  /* Inner spacing */
+    border: 2px solid #ffc56e;  /* Border */
+    border-radius: 10px;  /* Rounded corners */
+    background-color: #ffc56e;  /* Background color */
+    color: #333;  /* Text color */
+    
+    background-size: 10px;
+    cursor: pointer; 
+}
+
+.spice-level:hover {
+    border-color: #ffa012; 
+    background-color: #ffa012; 
+}
+
+.spice-level:focus {
+    border-color: #ffa012;  
+}
+#submit-btn{
+	color: #fff;
+	background-color: #ffc56e; 
+	border: 2px solid #ffc56e;
+	border-radius: 10px; 
+	padding: 10px;
+	text-align: center;
+	margin-left: 10px;
+}
+#submit-btn:hover {
+    border-color: #ffa012; 
+    background-color: #ffa012; 
+}
+
+
+/*---------------------
+        -Add to Cart
+-----------------------*/
+
+#addtocart > .container > h2{
+	font-size: 40px;
+	font-weight: 700;
+	font-family: "Satisfy", cursive;
+	margin-bottom: 30px;
+}
+#addtocart > .container > h2> span{
+	color: #ffa012;
+	
+}
+
+#order{
+	background-color: #ffb03b;
+	font-family: "EB Garamond", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 25px;
+  border-color: #ffb03b;
+  color: #fff;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+
+/*---------------------
+        bill Section
+-----------------------*/
+#bill{
+	font-family: 'Times New Roman', Times, serif;
+  font-optical-sizing: auto;
+	font-size: 25px;
+}
+
+/*---------------------
+        Admin Section
+-----------------------*/
+
+
+
+
+
+
+
